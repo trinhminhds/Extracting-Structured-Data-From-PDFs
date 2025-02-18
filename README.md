@@ -52,50 +52,55 @@ Inspired by the Ig Nobel Prizes, this project automates the extraction of struct
 
 1. **Clone the repository:**
 
-   ```bash
+   ```
    git clone https://github.com/trinhminhds/Extracting-Structured-Data-From-PDFs
    cd Extracting-Structured-Data-From-PDFs
    ```
 
 2. **Create and activate a virtual environment:**
   
-    ```bash
+    ```
     python -m venv myenv
     source myenv/bin/activate  # On Windows, use `myenv\Scripts\activate`
     ```
 
 3. **Install the required packages:**
-    ```bash
+    ```
     pip install -r requirements.txt
     ```
 
 4. **Set up your environment variables:**
 
     Create a `.env` file in the project root and add your OpenAI API key:
-    ```bash
+    ```
     OPENAI_API_KEY=your_openai_api_key_here
+    ```
 
 ## Usage
 ### Running Locally
 1. **Start the Streamlit web app:**
-   ```bash
+   ```
    streamlit run app/app.py
+   ```
    
 2. **Open your browser and navigate to http://localhost:8501 to interact with the app.**
    
 3. **Run the Jupyter Notebook:**
 If you prefer working in a notebook, open the notebooks/data_extraction.ipynb file using Jupyter Lab or Notebook:
-
+    ```
     jupyter lab  # or jupyter notebook
+    ```
 
 ## Using Docker
 1. **Build the Docker image:**
-    ```bash
+    ```
     docker build -t streamlit-app .
+    ```
 
 2. **Run the Docker container:**
     ```
     docker run -p 8501:8501 streamlit-app
+    ```
 3. **Access the app at http://localhost:8501.**
 
 ## Project Structure
