@@ -1,3 +1,4 @@
 .idea/misc.xml
 .idea/Structured-RAG-PDF.iml
 app/__pycache__/*
+.env
