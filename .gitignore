@@ -2,3 +2,6 @@
 .idea/Structured-RAG-PDF.iml
 app/__pycache__/*
 .env
+# PyCharm
+.idea
+
